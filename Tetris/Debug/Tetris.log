@@ -1,0 +1,38 @@
+﻿Build started 11/3/2016 6:08:02 PM.
+     1>Project "D:\Documents\Visual Studio\Tetris\Tetris\Tetris.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\Documents\C++\SFML-2.4.0\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp tetris.cpp
+         tetris.cpp
+     1>d:\documents\visual studio\tetris\tetris\tetris.cpp(61): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+         main.cpp
+     1>d:\documents\visual studio\tetris\tetris\main.cpp(66): warning C4007: 'WinMain' : must be '__stdcall'
+     1>d:\documents\visual studio\tetris\tetris\main.cpp(290): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\documents\visual studio\tetris\tetris\main.cpp(319): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>d:\documents\visual studio\tetris\tetris\main.cpp(333): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\Visual Studio\Tetris\Debug\Tetris.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Documents\C++\SFML-2.4.0\lib" /LIBPATH:"C:\Program Files (x86)\Windows Kits\8.1\\lib" "sfml-graphics-d.lib" "sfml-system-d.lib" "sfml-window-d.lib" "sfml-network-d.lib" "sfml-audio-d.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Documents\Visual Studio\Tetris\Debug\Tetris.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\Visual Studio\Tetris\Debug\Tetris.lib" /MACHINE:X86 Debug\Tetris.res
+         Debug\button.obj
+         Debug\keys.obj
+         Debug\main.obj
+         Debug\point.obj
+         Debug\tetris.obj
+         Debug\textbox.obj
+         Tetris.vcxproj -> D:\Documents\Visual Studio\Tetris\Debug\Tetris.exe
+       PostBuildEvent:
+         XCOPY /S/Y "D:\Documents\Visual Studio\Tetris\Tetris\Resources" "D:\Documents\Visual Studio\Tetris\Debug\Resources\"
+         :VCEnd
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\background.png
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\bebas.otf
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\brainflower.ttf
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\colors.png
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\grid.png
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\icon.png
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\mainBackground.png
+         D:\Documents\Visual Studio\Tetris\Tetris\Resources\myriad.otf
+         8 File(s) copied
+     1>Done Building Project "D:\Documents\Visual Studio\Tetris\Tetris\Tetris.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.01

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tetris", "Tetris\Tetris.vcxproj", "{A3A69EE2-5802-44F0-8C64-F6C68B7C7CB4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{E5068779-9597-46B8-A66B-8A0D822AF463}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3A69EE2-5802-44F0-8C64-F6C68B7C7CB4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3A69EE2-5802-44F0-8C64-F6C68B7C7CB4}.Debug|Win32.Build.0 = Debug|Win32
+		{A3A69EE2-5802-44F0-8C64-F6C68B7C7CB4}.Release|Win32.ActiveCfg = Release|Win32
+		{A3A69EE2-5802-44F0-8C64-F6C68B7C7CB4}.Release|Win32.Build.0 = Release|Win32
+		{E5068779-9597-46B8-A66B-8A0D822AF463}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5068779-9597-46B8-A66B-8A0D822AF463}.Debug|Win32.Build.0 = Debug|Win32
+		{E5068779-9597-46B8-A66B-8A0D822AF463}.Release|Win32.ActiveCfg = Release|Win32
+		{E5068779-9597-46B8-A66B-8A0D822AF463}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
