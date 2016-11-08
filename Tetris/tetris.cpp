@@ -383,7 +383,7 @@ bool TetrisBase::insertLines(int &lines)
 	lines = 0;
 	return okay;
 }
-void TetrisBase::timerTick()
+void TetrisBase::timerTick(sf::Mutex &mutex)
 {
 	allowMovementDown = true;
 	hitBottom = false;
@@ -457,7 +457,9 @@ void TetrisBase::timerTick()
 		else if (wendy == 2) score += 100;
 		else if (wendy == 3) score += 300;
 		else if (wendy >= 4) score += 1200;
+		mutex.lock();
 		hasClearedLines = wendy;
+		mutex.unlock();
 	}
 	else if (clearTime >= 1)
 	{

@@ -164,9 +164,9 @@ void workerThread()
 						sendTo = rand() % playerManager.CountPlayers();
 					}
 				}
-				write("Line sent from " + playerManager.GetByIp(sender) + " to " + playerManager.Players[sendTo].Name);
+				write("Lines sent from " + playerManager.GetByIp(sender) + " to " + playerManager.Players[sendTo].Name);
 				sf::Packet sendLine;
-				sendLine << (int)ClearLine << sendTo;
+				sendLine << (int)ClearLine << lines;
 				socket.send(sendLine, playerManager.Players[sendTo].IP, 14242);
 				mutex.unlock();
 			}

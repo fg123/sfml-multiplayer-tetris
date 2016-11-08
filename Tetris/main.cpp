@@ -452,9 +452,9 @@ void keyPressTetris(sf::Keyboard::Key pressed, sf::RenderWindow &window, Keys cu
 		Tetris.rotatePiece();
 		draw(window);
 	}
-	if (currentState.KeyDown)
+	if (pressed == sf::Keyboard::Key::Down)
 	{
-		timer += DOWN_TIMER;
+		timer = REGULAR_TIMER + 1;
 		Tetris.resetSetter();
 	}
 	if (pressed == sf::Keyboard::Key::LShift)
@@ -488,7 +488,7 @@ void update(sf::RenderWindow &window, Keys currentState, Keys oldState)
 			if (timer > timerInterval)
 			{
 
-				Tetris.timerTick();
+				Tetris.timerTick(mutex);
 				timer = 0;
 				draw(window);
 			}
@@ -599,9 +599,11 @@ void workerThread()
 				}
 				else if (response == (int)ClearLine)
 				{
+					mutex.lock();
 					int lines;
 					packet >> lines;
 					Tetris.linesToInsert = lines;
+					mutex.unlock();
 				}
 				else if (response == (int)ServerBroadcast && !hasAnotherServer)
 				{
@@ -631,10 +633,10 @@ void workerThread()
 		}
 		if (Tetris.hasClearedLines != 0 && !isSinglePlayer)
 		{
-			Tetris.hasClearedLines = 0;
 			sf::Packet packet;
 			packet << (int)ClearLine << Tetris.hasClearedLines;
 			socket.send(packet, serverIP, 14243);
+			Tetris.hasClearedLines = 0;
 		}
 		if (quit)
 		{

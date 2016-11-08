@@ -1,7 +1,7 @@
 #ifndef TETRIS_H
 #define TETRIS_H
 #include "point.h"
-
+#include <SFML/Graphics.hpp>
 class TetrisBase
 {
 public:
@@ -55,7 +55,7 @@ public:
 
 	void movePieceLeft();
 	void movePieceRight();
-	void timerTick();
+	void timerTick(sf::Mutex &mutex);
 	void reset();
 	
 };
